@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<p>Blog Page </p>
+
+{% if data is not empty %}
+    <p>Parameters </p>
+{% endif %}
+
+{% for key,value in data %}
+    <div>
+        Key : {{ key }}
+        Value : {{ value  | nl2br }}
+    </div>
+{% endfor %}
+
+</body>
+
+</html>
